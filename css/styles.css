@@ -1,0 +1,39 @@
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1300px;
+  /* margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+}
+
+.hero {
+  background-image: url(../images/stars.jpg);
+  margin-bottom: 70px;
+  min-height: 150px;
+}
+
+.hero-title {
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  color: aliceblue;
+}
