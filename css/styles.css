@@ -37,3 +37,17 @@ img {
 .hero-text {
   color: aliceblue;
 }
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  display: block;
+}
