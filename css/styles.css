@@ -51,3 +51,7 @@ input {
 button {
   display: block;
 }
+
+.user-email {
+  margin-bottom: 5px;
+}
