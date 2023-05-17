@@ -24,6 +24,10 @@ img {
   height: auto;
 }
 
+body {
+  background-color: #757575;
+}
+
 .container {
   width: 1300px;
   /* margin-left: auto;
@@ -121,4 +125,28 @@ button {
   border-radius: 4px;
   cursor: pointer;
   transition: var(--shift);
+}
+
+.rounded-corners-gradient-borders {
+  width: 300px;
+  height: 80px;
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00, #3020ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.border {
+  border-image: linear-gradient(98deg, teal, #ff000000) 1;
+  border-width: 4px;
+  border-style: solid;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.example {
+  border-radius: 5px;
+  background: linear gradient rgba(255, 255, 255, 0.4418) rgba(255, 255, 255, 0);
 }
