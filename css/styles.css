@@ -18,6 +18,10 @@ p {
   margin: 0;
 }
 
+.list {
+  list-style: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -25,43 +29,128 @@ img {
 }
 
 body {
-  background-color: #757575;
+  background-color: #ae1332;
 }
+
+/* Phone styles & > */
 
 .container {
-  width: 1300px;
-  /* margin-left: auto;
+  min-width: 320px;
+  max-width: 375px;
+  margin-left: auto;
   margin-right: auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+/* Tablet styles & > */
+/* @media only screen and (min-width: 768px) {
+  .container {
+    max-width: 744px;
+  }
+} */
+
+/* Desktop styles & > */
+/* @media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1250px;
+  }
+} */
+
+/* Hero */
 .hero {
-  background-image: url(../images/stars.jpg);
-  margin-bottom: 70px;
-  min-height: 150px;
+}
+
+.hero-container {
+  position: relative;
+  background-image: url(../images/hero/ban-mobile@1x.png), url(../images/hero/straw-mobile@1x.png);
+  background-position: top 50px left, top right;
+  background-repeat: no-repeat;
+  padding-top: 48px;
 }
 
 .hero-title {
-  color: aliceblue;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+  width: 335px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  z-index: 5;
 }
 
-.hero-text {
-  color: aliceblue;
+/* .hero-picture {
+  border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+section {
+  padding: 56px;
 }
 
-label {
+.img-wrap {
+  position: relative;
+  width: 330px;
+  height: 490px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(to top, rgb(174, 19, 50) 77%, rgb(174 19 50 /0) 85%);
+}
+
+.img-wrap::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-image: linear-gradient(359.94deg, #ffffff -1.7%, rgba(255, 255, 255, 0.441769) 30.64%, rgba(255, 255, 255, 0) 76.92%);
+  z-index: -1;
+}
+
+.img-wrap .inner {
+  overflow: hidden;
+}
+
+.img-wrap,
+.img-wrap::before,
+.img-wrap .inner {
+  border-radius: 500px;
+}
+
+.hero-btn {
+  position: absolute;
+  bottom: 0;
+}
+
+.fruit-element.watermelon {
+  background-color: #a4cb66;
+}
+
+.fruit-element.strawberry {
+  background-color: #f5ce13;
+}
+
+/* label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-}
+} */
 
 /* input {
   padding: 8px;
 } */
 
-button {
+/* button {
   display: block;
 }
 
@@ -144,9 +233,4 @@ button {
   width: 300px;
   text-align: center;
   margin-bottom: 20px;
-}
-
-.example {
-  border-radius: 5px;
-  background: linear gradient rgba(255, 255, 255, 0.4418) rgba(255, 255, 255, 0);
-}
+} */
